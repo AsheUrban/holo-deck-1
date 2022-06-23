@@ -1,8 +1,10 @@
 import exampleTestFunction from '../src/js/biz-func.js';
 
-const exampleTestFunction = () => {
-  console.log('hi there, from the deck');
-  return 'hi there, from the deck';
-};
 
-export default exampleTestFunction;
+describe("exampleTestFunction", () => {
+
+  test("should....", () => {
+    expect(exampleTestFunction()).toEqual("hi there, from the deck")
+  });
+
+});
